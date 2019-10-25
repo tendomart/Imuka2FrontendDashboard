@@ -13,6 +13,9 @@ import { IconsComponent }           from '../../pages/icons/icons.component';
 import { MapsComponent }            from '../../pages/maps/maps.component';
 import { NotificationsComponent }   from '../../pages/notifications/notifications.component';
 import { UpgradeComponent }         from '../../pages/upgrade/upgrade.component';
+import { AdddealComponent } from "../../pages/adddeal/adddeal.component";
+import { AlldealsComponent } from "../../pages/alldeals/alldeals.component";
+import { DealdetailsComponent } from "../../pages/dealdetails/dealdetails.component";
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -32,6 +35,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
+
+     AdddealComponent,
+    AlldealsComponent,
+    DealdetailsComponent
+  
   ]
 })
 
