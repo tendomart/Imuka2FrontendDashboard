@@ -12,14 +12,11 @@ import { AdddealComponent } from "../../pages/adddeal/adddeal.component";
 import { AlldealsComponent } from "../../pages/alldeals/alldeals.component";
 import { DealdetailsComponent } from "../../pages/dealdetails/dealdetails.component";
 
-
 export const AdminLayoutRoutes: Routes = [
- 
-      { path: "dashboard", component: DashboardComponent },
-      { path: "adddeal", component: AdddealComponent },
-      { path: "alldeals", component: AlldealsComponent },
-      { path: "dealdetails", component: DealdetailsComponent },
-      { path: "editdeal", component: IconsComponent },
-      { path: "", component: DashboardComponent }
-  
+  { path: "", redirectTo: "home/admindashboard/dashboard", pathMatch: "full" },
+  { path: "home/admindashboard/dashboard", component: DashboardComponent },
+  { path: "home/admindashboard/adddeal", component: AdddealComponent },
+  { path: "home/admindashboard/alldeals", component: AlldealsComponent },
+  { path: "home/admindashboard/dealdetails", component: DealdetailsComponent },
+  { path: "home/admindashboard/editdeal", component: IconsComponent }
 ];

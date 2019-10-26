@@ -8,21 +8,36 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-  { path: "/dashboard", title: "Dashboard", icon: "nc-bank", class: "" },
   {
-    path: "/adddeal",
+    path: "home/admindashboard/dashboard",
+    title: "Dashboard",
+    icon: "fa fa-home",
+    class: ""
+  },
+  {
+    path: "home/admindashboard/adddeal",
     title: "Add Deal",
-    icon: "nc-tile-56",
+    icon: "fa fa-plus",
     class: ""
   },
-  { path: "/alldeals", title: "All Deals", icon: "nc-caps-small", class: "" },
   {
-    path: "/dealdetails",
-    title: "Deal detais",
-    icon: "nc-caps-small",
+    path: "home/admindashboard/alldeals",
+    title: "All Deals",
+    icon: "fa fa-braille",
     class: ""
   },
-  { path: "/editdeal", title: "Edit Deal", icon: "nc-bell-55", class: "" }
+  {
+    path: "home/admindashboard/dealdetails",
+    title: "Deal detais",
+    icon: "fa fa-info-circle",
+    class: ""
+  },
+  {
+    path: "home/admindashboard/editdeal",
+    title: "Edit Deal",
+    icon: "fa fa-edit",
+    class: ""
+  }
 ];
 
 @Component({
