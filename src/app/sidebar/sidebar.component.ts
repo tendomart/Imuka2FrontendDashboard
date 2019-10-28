@@ -28,7 +28,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: "home/admindashboard/dealdetails",
-    title: "Deal detais",
+    title: "Deal details",
     icon: "fa fa-info-circle",
     class: ""
   },
