@@ -1,21 +1,23 @@
-import { Routes } from '@angular/router';
+import { Routes } from "@angular/router";
 
-import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
-import { UserComponent } from '../../pages/user/user.component';
-import { TableComponent } from '../../pages/table/table.component';
-import { TypographyComponent } from '../../pages/typography/typography.component';
-import { IconsComponent } from '../../pages/icons/icons.component';
-import { MapsComponent } from '../../pages/maps/maps.component';
-import { NotificationsComponent } from '../../pages/notifications/notifications.component';
-import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
+import { DashboardComponent } from "../../pages/dashboard/dashboard.component";
+// import { UserComponent } from '../../pages/user/user.component';
+// import { TableComponent } from '../../pages/table/table.component';
+// import { TypographyComponent } from '../../pages/typography/typography.component';
+import { IconsComponent } from "../../pages/icons/icons.component";
+// import { MapsComponent } from '../../pages/maps/maps.component';
+// import { NotificationsComponent } from '../../pages/notifications/notifications.component';
+// import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
+import { AdddealComponent } from "../../pages/adddeal/adddeal.component";
+import { AlldealsComponent } from "../../pages/alldeals/alldeals.component";
+import { DealdetailsComponent } from "../../pages/dealdetails/dealdetails.component";
+import { EditdealComponent } from "../../pages/editdeal/editdeal.component";
 
 export const AdminLayoutRoutes: Routes = [
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user',           component: UserComponent },
-    { path: 'table',          component: TableComponent },
-    { path: 'typography',     component: TypographyComponent },
-    { path: 'icons',          component: IconsComponent },
-    { path: 'maps',           component: MapsComponent },
-    { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent }
+  { path: "", redirectTo: "home/admindashboard/dashboard", pathMatch: "full" },
+  { path: "home/admindashboard/dashboard", component: DashboardComponent },
+  { path: "home/admindashboard/adddeal", component: AdddealComponent },
+  { path: "home/admindashboard/alldeals", component: AlldealsComponent },
+  { path: "home/admindashboard/dealdetails", component: DealdetailsComponent },
+  { path: "home/admindashboard/editdeal", component: EditdealComponent }
 ];
