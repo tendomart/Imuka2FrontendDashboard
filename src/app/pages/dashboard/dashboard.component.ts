@@ -10,6 +10,7 @@ export class DashboardComponent implements OnInit {
   public canvas: any;
   public ctx;
   public chartColor;
+
   public chartEmail;
   public chartHours;
 
@@ -173,6 +174,15 @@ export class DashboardComponent implements OnInit {
 
     var speedCanvas = document.getElementById("speedChart");
 
+  // public chartEmail;
+  // public chartHours;
+
+  ngOnInit() {
+    this.chartColor = "#FFFFFF";
+    var speedCanvas = document.getElementById("speedChart");
+
+    // static datasets values
+
     var dataFirst = {
       data: [0, 19, 15, 20, 30, 40, 40, 50, 25, 30, 50, 70],
       fill: false,
@@ -195,6 +205,19 @@ export class DashboardComponent implements OnInit {
       pointBorderWidth: 8
     };
 
+
+
+    var dataThird = {
+      data: [0, 8, 15, 20, 12, 24, 37, 30, 22, 35, 25, 53],
+      fill: false,
+      borderColor: "#5cb85c",
+      backgroundColor: "transparent",
+      pointBorderColor: "#5cb85c",
+      pointRadius: 4,
+      pointHoverRadius: 4,
+      pointBorderWidth: 8
+    };
+
     var speedData = {
       labels: [
         "Jan",
@@ -210,7 +233,11 @@ export class DashboardComponent implements OnInit {
         "Nov",
         "Dec"
       ],
+
       datasets: [dataFirst, dataSecond]
+
+      datasets: [dataFirst, dataSecond, dataThird]
+
     };
 
     var chartOptions = {
@@ -219,6 +246,9 @@ export class DashboardComponent implements OnInit {
         position: "top"
       }
     };
+
+
+    // Add Line Chart
 
     var lineChart = new Chart(speedCanvas, {
       type: "line",
