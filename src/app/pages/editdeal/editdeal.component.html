@@ -1,89 +1,161 @@
-<div class="container">
-  <h3>
-    The columns titles are merged with the filters inputs thanks to the
-    placeholders attributes
-  </h3>
-  <hr />
-  <p>
-    Inspired by this
-    <a href="http://bootsnipp.com/snippets/featured/panel-tables-with-filter"
-      >snippet</a
-    >
-  </p>
-  <div class="row">
-    <div class="panel panel-primary filterable">
-      <div class="panel-heading">
-        <h3 class="panel-title">Users</h3>
-        <div class="pull-right">
-          <button class="btn btn-default btn-xs btn-filter">
-            <span class="glyphicon glyphicon-filter"></span> Filter
-          </button>
-        </div>
+<div class="card">
+  <!-- card header -->
+  <div class="card-header">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <h3>Edit Deal</h3>
       </div>
-      <form action="#" class="credit-card-div">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row ">
-              <div class="col-md-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Card Number"
-                />
-              </div>
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <button
+          class="btn btn-primary float-right"
+          id="left"
+          style="color:white"
+        >
+          Add Deal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- card body -->
+  <div class="card-body">
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="usr"> Company Name:</label>
+          <input type="text" class="form-control" id="usr" />
+        </div>
+        <div class="form-group">
+          <label for="usr"> Brief Description:</label>
+          <input type="text" class="form-control" id="usr" />
+        </div>
+        <div class="form-group">
+          <label for="usr"> Amount to Raise:</label>
+          <input type="text" class="form-control" id="usr" />
+        </div>
+        <div class="form-group">
+          <label for="usr"> Address:</label>
+          <input type="text" class="form-control" id="usr" />
+        </div>
+        <div class="form-group">
+          <label for="sel1">Type of bussiness:</label>
+          <select class="form-control" id="sel1">
+            <option>Agrobussiness</option>
+            <option>construction</option>
+            <option>mechanics</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            placeholder="Enter password"
+            name="pswd"
+          />
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <label>Email:</label>
+              <input
+                type="text"
+                placeholder="info@imukaaccess.com"
+                class="form-control"
+              />
             </div>
-            <div class="row ">
-              <div class="col-md-3 col-sm-3 col-xs-3">
-                <span class="help-block text-muted small-font">
-                  Expiry Month</span
-                >
-                <input type="text" class="form-control" placeholder="MM" />
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-3">
-                <span class="help-block text-muted small-font">
-                  Expiry Year</span
-                >
-                <input type="text" class="form-control" placeholder="YY" />
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-3">
-                <span class="help-block text-muted small-font"> CCV</span>
-                <input type="text" class="form-control" placeholder="CCV" />
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-3">
-                <img src="assets/img/1.png" class="img-rounded" />
-              </div>
+            <div class="col-md-6">
+              <label>Tel:</label>
+              <input
+                type="text"
+                placeholder="+256 785810825"
+                class="form-control"
+              />
             </div>
-            <div class="row ">
-              <div class="col-md-12 pad-adjust">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Name On The Card"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 pad-adjust">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" checked class="text-muted" /> Save
-                    details for fast payments <a href="#"> learn how ?</a>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="row ">
-              <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                <input type="submit" class="btn btn-danger" value="CANCEL" />
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                <input
-                  type="submit"
-                  class="btn btn-warning btn-block"
-                  value="PAY NOW"
-                />
-              </div>
-            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pwd">Documents (Please Check available Document) </label>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                value=""
+              />Memorandum of Association
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                value=""
+              />Business Registration
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                value=""
+                disabled
+              />Business Plan
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="comment"
+            >Is the bussiness registered? (check the appropriate option):</label
+          >
+          <br />
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optradio" />Not
+              Registered
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="optradio"
+              />Registered
+            </label>
+          </div>
+        </div>
+        <!-- upload logo -->
+        <div class="form-group row">
+          <label for="fileInput" class="col-sm-3 form-control-label"
+            >upload image</label
+          >
+          <div class="col-sm-9">
+            <input type="file" name="myFile" /><br /><br />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comment">Deal Details:</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-4 offset-sm-3">
+            <button type="submit" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </form>
