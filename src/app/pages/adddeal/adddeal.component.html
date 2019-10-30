@@ -1,515 +1,319 @@
-          <!-- Forms Section-->
-          <section class="forms"> 
+<!--  Entreprenuer Validation Form-->
+<div class="card">
+    <div class="card-header">
+        <h3 style="text-align: center;">Imuka Agent-Business Validation Form</h3>
+    </div>
+    <div class="card-body">
+        <div id="main_warpper">
+            <!-- Bootstrap Container -->
             <div class="container-fluid">
-              <div class="row">
-                <!-- Basic Form-->
-                <!-- <div class="col-lg-6">
-                  <div class="card">
-                    <div class="card-close">
-                      <div class="dropdown">
-                        <button type="button" id="closeCard1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                        <div aria-labelledby="closeCard1" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
+              <!-- First form row -->
+              <form>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- The Company Deatils Section -->
+                    <legend>Company Details</legend>
+                    <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <label for="companyName" name="companyName">Company Name:</label>
+                        <input
+                          type="text"
+                          id="companyName"
+                          name="comapanyName"
+                          class="form-control"
+                          placeholder="Enter the Company name Here"
+                        />
+                        <small class="form-text text-muted"
+                          >This is the official name, as with Companies House, and will be
+                          used on legal documentation like MOU.</small
+                        >
                       </div>
                     </div>
-                    <div class="card-header d-flex align-items-center">
-                      <h3 class="h4">Basic Form</h3>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCompanyType" style="display: block;"
+                          >Company Type:</label
+                        >
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                          <option value="PUBLIC_COMPANY">Public company</option>
+                          <option value="SELF_EMPLOYED">Self-employed</option>
+                          <option value="GOVERNMENT_AGENCY">Government agency</option>
+                          <option value="NON_PROFIT">Nonprofit</option>
+                          <option value="SELF_OWNED">Sole proprietorship</option>
+                          <option value="PRIVATELY_HELD">Privately held</option>
+                          <option value="PARTNERSHIP">Partnership</option>
+                        </select>
+                        <small class="form-text text-muted"
+                          >Chooose the Company Type</small
+                        >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputIndustry">Company Industry:</label>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                          <option value="Accounting">Accounting</option>
+                          <option value="Alternative Medicine"
+                            >Alternative Medicine</option
+                          >
+                          <option value="Animation">Animation</option>
+                          <option value="Fashion">Apparel &amp; Fashion</option>
+                          <option value="Fashion">Arts &amp; Crafts</option>
+                          <option value="banking">Banking</option>
+                          <option value="building"
+                            >Building Materials</option
+                          >
+                          <option value="civil">Civil Engineering</option>
+                          <option value="realEstate"
+                            >Commercial Real Estate</option
+                          >
+                          <option value="networks"
+                            >Computer &amp; Network Security</option
+                          >
+                          <option value="construction">Construction</option>
+                          <option value="goods"
+                            >Consumer Goods &amp; Services</option
+                          >
+                          <option value="cosmetics">Cosmetics</option>
+                          <option value="dairy">Dairy</option>
+                          <option value="design">Design</option>
+                          <option value="elearning>E-learning"></option>
+                          <option value="entertainment">Entertainment</option>
+                          <option value="events">Events Services</option>
+                          <option value="farming">Farming</option>
+                          <option value="fishery">Fishery</option>
+                          <option value="food"
+                            >Food &amp; Beverages</option
+                          >
+                          <option value="furniture">Furniture</option>
+                          <option value="graphics">Graphic Design</option>
+                          <option value="gym4"
+                            >Health, Gym &amp; Fitness</option
+                          >
+                          <option value="hospital"
+                            >Hospital &amp; Health Care</option
+                          >
+                          <option value="HR">Human Resources</option>
+                          <option value="familyService"
+                            >Individual &amp; Family Services</option
+                          >
+                          <option value="ITServices"
+                            >Information Technology &amp; Services</option
+                          >
+                          <option value="insurance">Insurance</option>
+                          <option value="investmentBanking"
+                            >Investment Banking</option
+                          >
+                          <option value="law"
+                            >Law &amp; Judiciary</option
+                          >
+                          <option value="luxuryGoods"
+                            >Luxury Goods &amp; Jewelry</option
+                          >
+                          <option value="marketing"
+                            >Marketing &amp; Advertising</option
+                          >
+                          <option value="media">Media Production</option>
+                          <option value="medical">Medical Device</option>
+                          <option value="art">Performing Arts</option>
+                          <option value="photography">Photography</option>
+                          <option value="education"
+                            >Primary/Secondary Education</option
+                          >
+                          <option value="printing">Printing</option>
+                          <option value="recreational"
+                            >Recreational Facilities &amp; Services</option
+                          >
+                          <option value="religion"
+                            >Religious Institutions</option
+                          >
+                          <option value="restaurant">Restaurants</option>
+                          <option value="sports">Sports</option>
+                        </select>
+                        <small class="form-text text-muted"
+                          >Choose the Company Industry</small
+                        >
+                      </div>
                     </div>
-                    <div class="card-body">
-                      <p>Lorem ipsum dolor sit amet consectetur.</p>
-                      <form>
-                        <div class="form-group">
-                          <label class="form-control-label">Email</label>
-                          <input type="email" placeholder="Email Address" class="form-control">
-                        </div>
-                        <div class="form-group">       
-                          <label class="form-control-label">Password</label>
-                          <input type="password" placeholder="Password" class="form-control">
-                        </div>
-                        <div class="form-group">       
-                          <input type="submit" value="Signin" class="btn btn-primary">
-                        </div>
-                      </form>
+                    <div class="form-row">
+                      <div class="form-group col-md-8">
+                        <label for="inputAddress">Address Location:</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputAddress"
+                          placeholder="Kampala, Makerere"
+                        />
+                        <small class="form-text text-muted"
+                          >This is the Company Address and Location</small
+                        >
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input
+                          id="phoneNumber"
+                          name="phoneNumber"
+                          class="form-control"
+                          placeholder="+256-788-643-402"
+                          type="tel"
+                        />
+                        <small class="form-text text-muted"
+                          >Enter the Company Phone Number Here</small
+                        >
+                      </div>
                     </div>
+                    <!-- </form> -->
                   </div>
-                </div> -->
-                <!-- Horizontal Form-->
-                <!-- <div class="col-lg-6"> -->
-                  <!-- <div class="card">
-                    <div class="card-close">
-                      <div class="dropdown">
-                        <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                        <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
+                  <!-- Raise Money Details Section -->
+                  <div class="col-sm-6">
+                    <legend>Raise Details</legend>
+                    <div class="form-group">
+                      <label for="raisedAmount"> Amount to Raise: </label>
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                        <input
+                          id="raisedAmount"
+                          id="raisedAmount"
+                          class="form-control"
+                          placeholder="2,000$"
+                          type="number"
+                        />
+                        <small class="form-text text-muted"
+                          >Enter the minimum amount of money the business want to
+                          raise?</small
+                        >
                       </div>
                     </div>
-                    <div class="card-header d-flex align-items-center">
-                      <h3 class="h4">Horizontal Form</h3>
-                    </div>
-                    <div class="card-body">
-                      <p>Lorem ipsum dolor sit amet consectetur.</p>
-                      <form class="form-horizontal">
-                        <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Email</label>
-                          <div class="col-sm-9">
-                            <input id="inputHorizontalSuccess" type="email" placeholder="Email Address" class="form-control form-control-success"><small class="form-text">Example help text that remains unchanged.</small>
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Password</label>
-                          <div class="col-sm-9">
-                            <input id="inputHorizontalWarning" type="password" placeholder="Pasword" class="form-control form-control-warning"><small class="form-text">Example help text that remains unchanged.</small>
-                          </div>
-                        </div>
-                        <div class="form-group row">       
-                          <div class="col-sm-9 offset-sm-3">
-                            <input type="submit" value="Signin" class="btn btn-primary">
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div> -->
-                <!-- </div> -->
-                <!-- Inline Form-->
-                <!-- <div class="col-lg-8">                           
-                  <div class="card">
-                    <div class="card-close">
-                      <div class="dropdown">
-                        <button type="button" id="closeCard3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                        <div aria-labelledby="closeCard3" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                      </div>
-                    </div>
-                    <div class="card-header d-flex align-items-center">
-                      <h3 class="h4">Inline Form</h3>
-                    </div>
-                    <div class="card-body">
-                      <form class="form-inline">
-                        <div class="form-group">
-                          <label for="inlineFormInput" class="sr-only">Name</label>
-                          <input id="inlineFormInput" type="text" placeholder="Jane Doe" class="mr-3 form-control">
-                        </div>
-                        <div class="form-group">
-                          <label for="inlineFormInputGroup" class="sr-only">Username</label>
-                          <input id="inlineFormInputGroup" type="text" placeholder="Username" class="mr-3 form-control">
-                        </div>
-                        <div class="form-group">
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- Modal Form-->
-                <!-- <div class="col-lg-4">
-                  <div class="card"> -->
-                    <!-- <div class="card-close">
-                      <div class="dropdown">
-                        <button type="button" id="closeCard4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                        <div aria-labelledby="closeCard4" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                      </div>
-                    </div> -->
-                    <!-- <div class="card-header d-flex align-items-center">
-                      <h3 class="h4">Modal Form</h3>
-                    </div> -->
-                    <!-- <div class="card-body text-center">
-                      <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Form in simple modal </button>
-                       Modal
-                      <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
-                        <div role="document" class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h4 id="exampleModalLabel" class="modal-title">Signin Modal</h4>
-                              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-                            </div>
-                            <div class="modal-body">
-                              <p>Lorem ipsum dolor sit ame534543t consectetur.</p>
-                              <form>
-                                <div class="form-group">
-                                  <label>Email</label>
-                                  <input type="email" placeholder="Email Address" class="form-control">
-                                </div>
-                                <div class="form-group">       
-                                  <label>Password</label>
-                                  <input type="password" placeholder="Password" class="form-control">
-                                </div>
-                                <div class="form-group">       
-                                  <input type="submit" value="Signin" class="btn btn-primary">
-                                </div>
-                              </form>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div> -->
-                  <!-- </div>
-                </div> -->
-                <!-- Form Elements -->
-                <div class="col-lg-12">
-                  <div class="card">
-                    <div class="card-close">
-                      <div class="dropdown">
-                        <button type="button" id="closeCard5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                        <div aria-labelledby="closeCard5" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                      </div>
-                    </div>
-                    <div class="card-header d-flex align-items-center">
-                      <h3 class="h4">Imuka Agent - Enterprenuer Validation Form</h3>
-                    </div>
-                    <div class="card-body">
-                      <form class="form-horizontal">
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Normal</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control">
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Help text</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control"><small class="help-block-none">A block of help text that breaks onto a new line and may extend beyond one line.</small>
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Password</label>
-                          <div class="col-sm-9">
-                            <input type="password" name="password" class="form-control">
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Company Name</label>
-                          <div class="col-sm-9">
-                            <input type="text" placeholder="Company Name ..." class="form-control">
-                          </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Amount to Raise</label>
-                          <div class="col-sm-9">
-                            <select class="form-control">
-                              <option disabled="">Amount Required</option>
-                              <option>100,000 - 500,000</option>
-                              <option>600,0000 - 1000,000</option>
-                              <option>1M to 5M</option>
-                              <option>6M to 10M</option>
-                              <option>11M to 50M</option>
-                              <option>60M to 100M</option>
-                              <option>200M to 500M</option>
-                              <option>600M to 1Billion</option>
-                              <option>Over 1 Billion</option>
-                            </select>  </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Brief Business Description </label>
-                          <div class="col-sm-9">
-                            <div>
-                              <input id="option" type="checkbox" value="">
-                               </div>
-                          
-                          </div>
-                        </div>
 
-                        <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Industry </label>
-                          <div class="col-sm-9">
-                            <div>
-                              <input id="option" type="checkbox" value="">
-                               </div>
-                          
-                          </div>
-                        </div>
-
-                        <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Location </label>
-                          <div class="col-sm-9">
-                            <div>
-                              <input id="option" type="checkbox" value="">
-                               </div>
-                          
-                          </div>
-                        </div>
-
-                        <label class="col-sm-3 form-control-label boxe">Documents (Please Check available Document) </label>
-                        <div class="boxes">
-                          <label class="checkbox-inline">
-                          <input type="checkbox" id="inlineCheckbox1" value="option1"> Memorandum of Association
-                          </label>
-                          <label class="checkbox-inline">
-                          <input type="checkbox" id="inlineCheckbox2" value="option2"> Business Registration
-                          </label>
-                          <label class="checkbox-inline">
-                          <input type="checkbox" id="inlineCheckbox3" value="option3"> Business Plan
-                          </label>
-                          
-                          
-                        </div>
-
-
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Inline checkboxes</label>
-                          <div class="col-sm-9">
-                            <label class="checkbox-inline">
-                              <input id="inlineCheckbox1" type="checkbox" value="option1"> a
-                            </label>
-                            <label class="checkbox-inline">
-                              <input id="inlineCheckbox2" type="checkbox" value="option2"> b
-                            </label>
-                            <label class="checkbox-inline">
-                              <input id="inlineCheckbox3" type="checkbox" value="option3"> c
-                            </label>
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Checkboxes &amp;  &#9742; radios <br><small class="text-primary">Custom elements</small></label>
-                          <div class="col-sm-9">
-                            <div class="i-checks">
-                              <input id="checkboxCustom1" type="checkbox" value="" class="checkbox-template">
-                              <label for="checkboxCustom1">Option one</label>
-                            </div>
-                            <div class="i-checks">
-                              <input id="checkboxCustom2" type="checkbox" value="" checked="" class="checkbox-template">
-                              <label for="checkboxCustom2">Option two checked</label>
-                            </div>
-                            <div class="i-checks">
-                              <input id="checkboxCustom" type="checkbox" value="" disabled="" checked="" class="checkbox-template">
-                              <label for="checkboxCustom">Option three checked and disabled</label>
-                            </div>
-                            <div class="i-checks">
-                              <input id="checkboxCustom3" type="checkbox" value="" disabled="" class="checkbox-template">
-                              <label for="checkboxCustom3">Option four disabled</label>
-                            </div>
-                            <div class="i-checks">
-                              <input id="radioCustom1" type="radio" value="option1" name="a" class="radio-template">
-                              <label for="radioCustom1">Option one</label>
-                            </div>
-                            <div class="i-checks">
-                              <input id="radioCustom2" type="radio" checked="" value="option2" name="a" class="radio-template">
-                              <label for="radioCustom2">Option two checked</label>
-                            </div>
-                            <div class="i-checks">
-                              <input id="radioCustom3" type="radio" disabled="" checked="" value="option2" class="radio-template">
-                              <label for="radioCustom3">Option three checked and disabled</label>
-                            </div>
-                            <div class="i-checks">
-                              <input id="radioCustom4" type="radio" disabled="" name="a" class="radio-template">
-                              <label for="radioCustom4">Option four disabled</label>
-                            </div>
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Select</label>
-                          <div class="col-sm-9">
-                            <select name="account" class="form-control mb-3">
-                              <option>option 1</option>
-                              <option>option 2</option>
-                              <option>option 3</option>
-                              <option>option 4</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-9 offset-sm-3">
-                            <select multiple="" class="form-control">
-                              <option>option 1</option>
-                              <option>option 2</option>
-                              <option>option 3</option>
-                              <option>option 4</option>
-                            </select>
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label for="fileInput" class="col-sm-3 form-control-label">File input</label>
-                          <div class="col-sm-9">
-                            <input id="fileInput" type="file" class="form-control-file">
-                          </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="form-group row has-success">
-                          <label class="col-sm-3 form-control-label">Input with success</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control is-valid">
-                          </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="form-group row has-danger">
-                          <label class="col-sm-3 form-control-label">Input with error</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control is-invalid">
-                            <div class="invalid-feedback">Please provide your name.</div>
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Control sizing</label>
-                          <div class="col-sm-9">
-                            <div class="form-group">
-                              <input type="text" placeholder=".input-lg" class="form-control form-control-lg">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" placeholder="Default input" class="form-control">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" placeholder=".input-sm" class="form-control form-control-sm">
-                            </div>
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Column sizing</label>
-                          <div class="col-sm-9">
-                            <div class="row">
-                              <div class="col-md-3">
-                                <input type="text" placeholder=".col-md-3" class="form-control">
-                              </div>
-                              <div class="col-md-4">
-                                <input type="text" placeholder=".col-md-4" class="form-control">
-                              </div>
-                              <div class="col-md-5">
-                                <input type="text" placeholder=".col-md-5" class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                        </div> -->
-                        <div class="line"> </div>
-                        <!-- <div class="row">
-                          <label class="col-sm-3 form-control-label">Material Inputs</label>
-                          <div class="col-sm-9">
-                            <div class="form-group-material">
-                              <input id="register-username" type="text" name="registerUsername" required class="input-material">
-                              <label for="register-username" class="label-material">Username</label>
-                            </div>
-                            <div class="form-group-material">
-                              <input id="register-email" type="email" name="registerEmail" required class="input-material">
-                              <label for="register-email" class="label-material">Email Address      </label>
-                            </div>
-                            <div class="form-group-material">
-                              <input id="register-password" type="password" name="registerPassword" required class="input-material">
-                              <label for="register-password" class="label-material">Password     </label>
-                            </div>
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <!-- <div class="form-group row">
-                          <label class="col-sm-3 form-control-label">Input groups</label>
-                          <div class="col-sm-9">
-                            <div class="form-group">
-                              <div class="input-group">
-                                <div class="input-group-prepend"><span class="input-group-text">@</span></div>
-                                <input type="text" placeholder="Username" class="form-control">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="input-group">
-                                <input type="text" class="form-control">
-                                <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="input-group">
-                                <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-                                <input type="text" class="form-control">
-                                <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text">
-                                    <input type="checkbox">
-                                  </div>
-                                </div>
-                                <input type="text" class="form-control">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text">
-                                    <input type="checkbox" class="checkbox-template">
-                                  </div>
-                                </div>
-                                <input type="text" class="form-control">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text">
-                                    <input type="radio">
-                                  </div>
-                                </div>
-                                <input type="text" class="form-control">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text">
-                                    <input type="radio" class="radio-template">
-                                  </div>
-                                </div>
-                                <input type="text" class="form-control">
-                              </div>
-                            </div>
-                          </div>
-                        </div> -->
-                        <div class="line"></div>
-                        <div class="form-group row">
-                          <!-- <label class="col-sm-3 form-control-label">Button addons</label> -->
-                          <div class="col-sm-9">
-                            <!-- <div class="form-group">
-                              <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <button type="button" class="btn btn-primary">Go!</button>
-                                </div>
-                                <input type="text" class="form-control">
-                              </div>
-                            </div> -->
-                            <!-- <div class="form-group">
-                              <div class="input-group">
-                                <input type="text" class="form-control">
-                                <div class="input-group-append">
-                                  <button type="button" class="btn btn-primary">Go!</button>
-                                </div>
-                              </div>
-                            </div> -->
-                          </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="form-group row">
-                          <!-- <label class="col-sm-3 form-control-label">With dropdowns</label>
-                          <div class="col-sm-9">
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <button data-toggle="dropdown" type="button" class="btn btn-outline-secondary dropdown-toggle">Action <span class="caret"></span></button>
-                                <div class="dropdown-menu"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a><a href="#" class="dropdown-item">Something else here</a>
-                                  <div class="dropdown-divider"></div><a href="#" class="dropdown-item">Separated link</a>
-                                </div>
-                              </div>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div> -->
-                        </div>
-                        <div class="line"></div>
-                        <div class="form-group row">
-                          <div class="col-sm-4 offset-sm-3">
-                            <button type="submit" class="btn btn-secondary">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Save changes</button>
-                          </div>
-                        </div>
-                      </form>
-
-                      
+                    <div class="form-group">
+                      <label for="endDate" id="endDate">End Date:</label>
+                      <input id="endDate" name="endDate" type="date" class="form-control">
+                      <small class="form-text text-muted"
+                        >Please Select The Date you want the deal to expire (The Max Day is 30 Days) </small
+                      >
+                    </div>
+                    <div class="form-group">
+                      <label for="startDate" id="startDate">Date Created:</label>
+                      <input id="startDate" name="startDate" type="date" class="form-control">
+                      <small class="form-text text-muted"
+                        >Please Select The Date you're adding the deal </small
+                      >
                     </div>
                   </div>
                 </div>
-              </div>
+                <hr />
+                <!-- Second Form Row -->
+                <div class="row">
+                  <div class="col-sm-6">
+                    <legend>Deal Details</legend>
+                    <div class="custom-file">
+                      <input
+                        type="file"
+                        class="custom-file-input"
+                        id="validatedCustomFile"
+                        required
+                      />
+                      <label class="custom-file-label" for="validatedCustomFile"
+                        >Upload the Cover Photo of the Company</label
+                      >
+                      <div class="invalid-feedback">
+                        Example invalid custom file feedback
+                      </div>
+                    </div>
+                    <small class="form-text text-muted"
+                      >300 x 300px recommended. JPGs, JPEGs, and PNGs supported.</small
+                    >
+                    <div class="mb-3">
+                      <label for="validationTextarea" for="companyDesc"
+                        >Company Description</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="companyDesc"
+                        placeholder="   Enter the Company Details Here"
+                        name="companyDesc"
+                      ></textarea>
+                      <small class="form-text text-muted"
+                        >Write A Brief Description of the Company Here</small
+                      >
+                    </div>
+                  </div>
+                  <!-- Second colum of the second row -->
+                  <div class="col-sm-6">
+                    <legend>Company Documents</legend>
+                    <div class="form-group">
+                      <strong
+                        ><label for="docsVerify"
+                          >Which of the folowing Documents have you verified Exist from
+                          the Business Owner?</label
+                        ></strong
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customCheck1"
+                      />
+                      <label class="custom-control-label" for="customCheck1"
+                        >Business Plan</label
+                      >
+                    </div>
+          
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customCheck2"
+                      />
+                      <label class="custom-control-label" for="customCheck2"
+                        >Memorandum of Understanding</label
+                      >
+                    </div>
+          
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customCheck3"
+                      />
+                      <label class="custom-control-label" for="customCheck3"
+                        >Registration</label
+                      >
+                    </div>
+          
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customCheck4"
+                      />
+                      <label class="custom-control-label" for="customCheck4"
+                        >Financial Statement</label
+                      >
+                    </div>
+          
+                    <small class="form-text text-muted"
+                      >Choose all the Documents you have verified from the Business Owner.</small
+                    >
+                  </div>
+                </div>
+                <!-- Buttons -->
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <button type="button" class="btn btn-secondary" >Validate Deal</button>
+                  </div>
+                  <div class="form-group col-md-4">
+                      <button type="reset" class="btn btn-secondary" btn-lg>Cancel</button>
+                  </div>
+                  <div class="form-group col-md-2">
+                      <button type="button" class="btn btn-secondary" btn-lg>Save</button>
+                  </div>
+                </div>
+              </form>
             </div>
-          </section>
+        </div>
+    </div>
+</div>
+
+
