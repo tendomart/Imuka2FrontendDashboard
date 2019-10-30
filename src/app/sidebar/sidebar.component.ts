@@ -22,14 +22,14 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: "home/admindashboard/alldeals",
-    title: "All/Edit Deals",
-    icon: "fa fa-braille",
+    title: "All Deals",
+    icon: "fa fa-list",
     class: ""
   },
   {
     path: "home/admindashboard/dealdetails",
     title: "Bids and Offers",
-    icon: "fa fa-info-circle",
+    icon: "fa fa-money",
     class: ""
   }
 ];
