@@ -1,75 +1,135 @@
 /* styling the Nav Bar height */
-.navbar {
-  height: 80px;
+// .navbar {
+//   height: 80px;
+// }
+
+// .btn {
+//   margin-left: 10px;
+//   color: white;
+// }
+
+// .form-control {
+//   padding-left: 20px;
+//   border-radius: 20px;
+// }
+
+// .navbar-nav .nav-link {
+//   color: #fff !important;
+//   font-size: 18px;
+// }
+
+// .navbar-nav .nav-link:hover {
+//   color: lightgrey !important;
+// }
+
+// /* Logo */
+
+// .navbar-brand .logo {
+//   width: 80px;
+//   height: 80px;
+// }
+
+// /* Search Icons */
+
+// .search-icon {
+//   position: absolute;
+//   top: 28px;
+//   right: 280px;
+//   cursor: pointer;
+// }
+
+// /* Rounded BTN */
+// .btn-rounded {
+//   padding-left: 30px;
+//   padding-right: 30px;
+//   border-radius: 20px !important;
+// }
+
+// .btn-outline-opportunity {
+//   background-color: #0a1d52;
+// }
+
+// .btn-rounded-opportunity {
+//   border-radius: 20px;
+//   padding-left: 35px !important;
+//   padding-right: 35px !important;
+// }
+
+// /* remove x from inout field */
+
+// input[type="text"]::-ms-clear {
+//   display: none;
+//   width: 0;
+//   height: 0;
+// }
+// input[type="text"]::-ms-reveal {
+//   display: none;
+//   width: 0;
+//   height: 0;
+// }
+// input[type="search"]::-webkit-search-decoration,
+// input[type="search"]::-webkit-search-cancel-button,
+// input[type="search"]::-webkit-search-results-button,
+// input[type="search"]::-webkit-search-results-decoration {
+//   display: none;
+// }
+
+// .navbar {
+//   min-height: 80px;
+// }
+// .navbar-nav .nav-link {
+//   color: #fff !important;
+//   font-size: 18px;
+// }
+// .navbar-brand {
+//   padding: 0 75px;
+//   height: 80px;
+//   line-height: 80px;
+// }
+// .navbar-brand .logo {
+//   width: 77px;
+//   height: 77px;
+// }
+// .navbar-nav .nav-link:hover {
+//   color: lightgrey !important;
+//   background-color: #428bca;
+// }
+// .icon-bar {
+//   background-color: white;
+// }
+
+// .navbar-toggle {
+//   /* (80px - button height 34px) / 2 = 23px */
+//   margin-top: 23px;
+//   padding: 9px 10px !important;
+// }
+
+// @media (min-width: 768px) {
+//   .navbar-nav > li > a {
+//     /* (80px - line-height of 27px) / 2 = 26.5px */
+//     padding-top: 26.5px;
+//     padding-bottom: 26.5px;
+//     line-height: 27px;
+//   }
+// }
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
 }
-
-.btn {
-  margin-left: 10px;
-  color: white;
+.bg-blue {
+  background-color: #007edb;
 }
-
-.form-control {
-  padding-left: 20px;
-  border-radius: 20px;
+.navbar-brand img {
+  height: 30px;
 }
-
-.navbar-nav .nav-link {
-  color: #fff !important;
-  font-size: 18px;
+.navbar-brand {
+  padding: 0px;
 }
-
-.navbar-nav .nav-link:hover {
-  color: lightgrey !important;
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 16px;
 }
-
-/* Logo */
-
-.navbar-brand .logo {
-  width: 80px;
-  height: 80px;
-}
-
-/* Search Icons */
-
-.search-icon {
-  position: absolute;
-  top: 28px;
-  right: 280px;
-  cursor: pointer;
-}
-
-/* Rounded BTN */
-.btn-rounded {
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 20px !important;
-}
-
-.btn-outline-opportunity {
-  background-color: #0a1d52;
-}
-
-.btn-rounded-opportunity {
-  border-radius: 20px;
-  padding-left: 35px !important;
-  padding-right: 35px !important;
-}
-
-/* remove x from inout field */
-
-input[type="text"]::-ms-clear {
-  display: none;
-  width: 0;
-  height: 0;
-}
-input[type="text"]::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
-}
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
+.navbar-dark .navbar-nav .active .nav-link {
+  color: #fff;
 }
