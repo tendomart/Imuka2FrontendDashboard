@@ -9,25 +9,25 @@ export interface RouteInfo {
 
 export const ROUTES: RouteInfo[] = [
   {
-    path: "home/admindashboard/dashboard",
+    path: "/dashboard",
     title: "Dashboard",
     icon: "fa fa-home",
     class: ""
   },
   {
-    path: "home/admindashboard/adddeal",
+    path: "/adddeal",
     title: "Add Deal",
     icon: "fa fa-plus",
     class: ""
   },
   {
-    path: "home/admindashboard/alldeals",
+    path: "/alldeals",
     title: "All Deals",
     icon: "fa fa-list",
     class: ""
   },
   {
-    path: "home/admindashboard/dealdetails",
+    path: "/dealdetails",
     title: "Bids and Offers",
     icon: "fa fa-money",
     class: ""

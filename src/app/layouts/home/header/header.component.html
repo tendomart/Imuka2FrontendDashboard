@@ -1,87 +1,3 @@
-<!-- <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button
-        type="button"
-        class="navbar-toggle"
-        data-toggle="collapse"
-        data-target="#myNavbar"
-      >
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="#">
-        <img
-          src="favicon.ico"
-          class="logo img-responsive"
-          alt="Cinque Terre"
-          alt="Imuka Access"
-        />
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a
-            class="nav-link "
-            href="#"
-            data-toggle="tooltip"
-            title="Look at Available Opportuities"
-            >Funding Opportunities
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="admindashboard"
-            data-toggle="tooltip"
-            title="See Available Deals"
-            >Deals
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-            data-toggle="tooltip"
-            title="See Available Deals"
-            >About Us
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="login"
-            data-toggle="tooltip"
-            title="See Available Deals"
-            >Contact Us</a
-          >
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-link">
-          <a
-            href="#"
-            class="btn btn-success btn-sm navbar-btn"
-            style="padding:5px; margin-right: 10px;"
-            ><span class="glyphicon glyphicon-user"></span> Sign Up</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="btn btn-danger btn-sm navbar-btn"
-            style="padding: 5px; margin-right: 10px;"
-            ><span class="glyphicon glyphicon-log-in"></span> Login</a
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
-
 <nav class="navbar navbar-expand-md navbar-dark bg-blue">
   <div class="container">
     <a class="navbar-brand" routerLink="/">
@@ -90,8 +6,6 @@
         class="logo img-responsive"
         alt="Cinque Terre"
         alt="Imuka Access"
-        width="45"
-        height="500"
       />
     </a>
     <button
@@ -102,6 +16,7 @@
       aria-controls="navbarCollapse"
       aria-expanded="false"
       aria-label="Toggle navigation"
+      style="padding: 0px;"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -120,7 +35,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="admindashboard"
+            routerLink="/admindashboard"
             data-toggle="tooltip"
             title="See Available Deals"
             >Deals
@@ -137,7 +52,7 @@
         </li>
 
         <li class="nav-item">
-          <a routerLink="/blog" routerLinkActive="acitve" class="nav-link"
+          <a routerLink="/adddeal" routerLinkActive="acitve" class="nav-link"
             >Blog</a
           >
         </li>
@@ -145,8 +60,8 @@
       <ul class="navbar-nav  ml-auto">
         <li class="nav-item" *ngIf="!isLoggedIn">
           <a
-            routerLink="signup"
-            class="nav-link"
+            class="nav-link "
+            routerLink="/signup"
             class="btn btn-success btn-sm navbar-btn"
             style="margin-right:5px;"
             >Sign Up</a
@@ -154,18 +69,11 @@
         </li>
         <li class="nav-item" *ngIf="!isLoggedIn">
           <a
-            routerLink="login"
             class="nav-link"
+            routerLink="/login"
             class="btn btn-danger btn-sm navbar-btn"
             >Login</a
           >
-        </li>
-
-        <li class="nav-item" *ngIf="">
-          <a routerLink="/admin" class="nav-link">Admin Dashboard</a>
-        </li>
-        <li class="nav-item" *ngIf="">
-          <a routerLink="/login" class="nav-link">Logout</a>
         </li>
       </ul>
     </div>
