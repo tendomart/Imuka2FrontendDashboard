@@ -1,0 +1,57 @@
+/* .industry{
+    margin-left:250px;
+}
+
+
+.location{
+    margin-left:30px;
+}
+
+.range{
+    margin-left:30px;
+}
+
+.btn{
+    margin-left:50px;
+} */
+
+.s-filter{
+border-block-end-width: 10px;
+border-block-color: red;
+
+}
+
+.filter{
+    /* The image used */
+background-image: url("/assets/imuka_investor.jpg");
+
+ /* Add the blur effect */
+ /* filter: blur(1px);
+ -webkit-filter: blur(8px); */
+
+ /* Full height */
+ height: 85%;
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.search-form{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+}

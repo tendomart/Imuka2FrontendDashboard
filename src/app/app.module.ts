@@ -13,23 +13,25 @@ import { AppRoutes } from "./app.routing";
 
 import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
 //import { RegisterComponent } from "./layouts/login/register/register.component";
-import { BodyComponent } from "./layouts/home/body/body.component";
+//import { BodyComponent } from "./layouts/home/body/body.component";
 import { HeaderComponent } from "./layouts/home/header/header.component";
 import { FooterComponent } from "./layouts/home/footer/footer.component";
+
 import { HomeComponent } from "./layouts/home/home.component";
-import { LoginComponent } from "./layouts/signup/login/login.component";
-import { RegisterComponent } from "./layouts/signup/register/register.component";
+// import { LoginComponent } from "./layouts/signup/login/login.component";
+// import { RegisterComponent } from "./layouts/signup/register/register.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    RegisterComponent,
-    BodyComponent,
+    // RegisterComponent,
+    //BodyComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
-    LoginComponent
+    HomeComponent
+
+    //LoginComponent
   ],
   imports: [
     BrowserAnimationsModule,

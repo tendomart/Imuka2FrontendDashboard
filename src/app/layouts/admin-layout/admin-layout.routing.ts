@@ -14,10 +14,14 @@ import { DealdetailsComponent } from "../../pages/dealdetails/dealdetails.compon
 import { EditdealComponent } from "../../pages/editdeal/editdeal.component";
 
 export const AdminLayoutRoutes: Routes = [
-  { path: "", redirectTo: "home/admindashboard/dashboard", pathMatch: "full" },
-  { path: "home/admindashboard/dashboard", component: DashboardComponent },
-  { path: "home/admindashboard/adddeal", component: AdddealComponent },
-  { path: "home/admindashboard/alldeals", component: AlldealsComponent },
-  { path: "home/admindashboard/dealdetails", component: DealdetailsComponent },
-  { path: "home/admindashboard/editdeal", component: EditdealComponent }
+  {
+    path: "",
+    redirectTo: "dashboard",
+    pathMatch: "full"
+  },
+  { path: "dashboard", component: DashboardComponent },
+  { path: "adddeal", component: AdddealComponent },
+  { path: "alldeals", component: AlldealsComponent },
+  { path: "dealdetails", component: DealdetailsComponent },
+  { path: "editdeal", component: EditdealComponent }
 ];

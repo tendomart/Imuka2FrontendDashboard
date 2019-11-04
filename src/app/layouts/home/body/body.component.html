@@ -1,3 +1,5 @@
+<app-search-filter></app-search-filter>
+
 <div class="main_container">
   <h2 class="text-center">Trending deals</h2>
   <div class="card-deck">
@@ -25,9 +27,10 @@
           Uganda.
         </p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-info">Read more</button>
+
+        <a routerLink="/login" class="btn btn-info">Read more</a>
+
         <div>
-          <a routerLink="agentdashboard">dashboard</a>
           <a
             class="nav-link"
             href="#"
@@ -69,7 +72,7 @@
         </ul>
 
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-info">Read more</button>
+        <a routerLink="/login" class="btn btn-info">Read more</a>
 
         <div>
           <a
@@ -83,25 +86,42 @@
       </div>
     </div>
 
-    <div class="card">
-      <header
-        class="card-header"
-        style="color: white; background: DodgerBlue ;"
-      >
-        <h1>Header</h1>
-      </header>
-
-      <div class="card-body">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor
-        </p>
+    <!--Soya Static  Card -->
+    <div class="card mb-4">
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="/assets/soya.jpg" alt="Card image cap" />
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
       </div>
 
-      <footer class="card-footer">
-        <button class="btn btn-info">See More</button
-        ><button>7 d(s) left</button>
-      </footer>
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">500M UGX , 5% Equity...</h4>
+        <!--Text-->
+        <p class="card-text">
+          Agroprocesing company that specializes in Nutritious Flours, Peanut
+          paste. Registered as a limited Liability company in 2014. The business
+          started as a food processing unit to to reduce the magnitude of
+          malnutrition in rural areas and fight poverty amongst the peasant
+          farmers while create employment in the Northern and Easterns region of
+          Uganda.
+        </p>
+
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a routerLink="/login" class="btn btn-info">Read more</a>
+        <div>
+          <a
+            class="nav-link"
+            href="#"
+            data-toggle="tooltip"
+            title="Remaining Days"
+            >Days Left <span class="badge badge-pill badge-danger">90</span></a
+          >
+        </div>
+      </div>
     </div>
   </div>
 
@@ -128,7 +148,7 @@
           bulk of the card's content.
         </p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-info">Read more</button>
+        <a routerLink="/login" class="btn btn-info">Read more</a>
       </div>
     </div>
     <!-- Card -->
@@ -137,11 +157,7 @@
     <div class="card mb-4">
       <!--Card image-->
       <div class="view overlay">
-        <img
-          class="card-img-top"
-          src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
-          alt="Card image cap"
-        />
+        <img class="card-img-top" src="/assets/img2.jpg" alt="Card image cap" />
         <a href="#!">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -157,7 +173,7 @@
           bulk of the card's content.
         </p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-info">Read more</button>
+        <a routerLink="/login" class="btn btn-info">Read more</a>
       </div>
     </div>
     <!-- Card -->
@@ -166,11 +182,7 @@
     <div class="card mb-4">
       <!--Card image-->
       <div class="view overlay">
-        <img
-          class="card-img-top"
-          src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
-          alt="Card image cap"
-        />
+        <img class="card-img-top" src="/assets/4.jpg" alt="Card image cap" />
         <a href="#!">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -187,7 +199,7 @@
           bulk of the card's content.
         </p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-info">Read more</button>
+        <a routerLink="/login" class="btn btn-info">Read more</a>
       </div>
     </div>
     <!-- Card -->
