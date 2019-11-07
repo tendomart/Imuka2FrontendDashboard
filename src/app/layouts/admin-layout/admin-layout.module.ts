@@ -10,14 +10,18 @@ import { UserComponent }            from '../../pages/user/user.component';
 import { TableComponent }           from '../../pages/table/table.component';
 import { TypographyComponent }      from '../../pages/typography/typography.component';
 import { IconsComponent } from "../../pages/icons/icons.component";
+mport { UpgradeComponent }         from '../../pages/upgrade/upgrade.component';
+
+
 import { MapsComponent }            from '../../pages/maps/maps.component';
 import { NotificationsComponent }   from '../../pages/notifications/notifications.component';
 import { UpgradeComponent }         from '../../pages/upgrade/upgrade.component';
+
 import { AdddealComponent } from "../../pages/adddeal/adddeal.component";
 import { AlldealsComponent } from "../../pages/alldeals/alldeals.component";
 import { DealdetailsComponent } from "../../pages/dealdetails/dealdetails.component";
 import { EditdealComponent } from "../../pages/editdeal/editdeal.component";
-
+import { NgxPaginationModule } from "ngx-pagination";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
@@ -25,14 +29,17 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
+    NgxPaginationModule,
     NgbModule
   ],
   declarations: [
     DashboardComponent,
+
     UserComponent,
     TableComponent,
     UpgradeComponent,
     TypographyComponent,
+
     IconsComponent,
     MapsComponent,
     NotificationsComponent,

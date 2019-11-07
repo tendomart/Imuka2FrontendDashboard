@@ -1,136 +1,63 @@
-<div id="content-wrapper">
-  <div class="container-fluid">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="#">All Deals Added</a>
-      </li>
-    </ol>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            <i class="fa fa-table fa-lg"></i> (12) Deals Added
-          </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Business Name</th>
-                    <th scope="col">Legal Identity</th>
-                    <th scope="col">Region</th>
-                    <th scope="col">Details</th>
-                    <th scope="col">Verify</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Private</td>
-                    <td>Central</td>
-                    <td>
-                      <a href="../adddeal/adddeal.component.html"> View</a>
-                    </td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Private</td>
-                    <td>Western</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Partnership</td>
-                    <td>Northern</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Government</td>
-                    <td>Central</td>
-                    <td>
-                      <a href="../adddeal/adddeal.component.html"> View</a>
-                    </td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>NGO</td>
-                    <td>Western</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Private</td>
-                    <td>Northern</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Self-Propertiorship</td>
-                    <td>Northern</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Private</td>
-                    <td>Northern</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">9</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Private</td>
-                    <td>Northern</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Private</td>
-                    <td>Northern</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">11</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Private</td>
-                    <td>Northern</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">12</th>
-                    <td>Imuka Ventures Company LTD</td>
-                    <td>Private</td>
-                    <td>Northern</td>
-                    <td><a href="#"> View</a></td>
-                    <td><a href="#">Validate</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="container custom-container-2">
+  <!-- Show it when there is no employee -->
+  <div class="no-data text-center" *ngIf="Deal.length == 0">
+    <p>There is no Deal added yet!</p>
+    <button class="btn btn-outline-primary" routerLink="/create-employee">
+      Add Deal
+    </button>
+  </div>
+
+  <!-- Employees list table, it hides when there is no employee -->
+  <div *ngIf="Deal.length !== 0">
+    <h3 class="mb-3 text-center">Deal List</h3>
+
+    <div class="table-responsive-lg">
+      <table class="table table-bordered table-striped ">
+        <thead>
+          <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">CompanyName</th>
+            <th scope="col">Crated Date</th>
+            <th scope="col">Phone No</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="
+              let deal of Deal
+                | paginate: { itemsPerPage: count, currentPage: p }
+            "
+          >
+            <td>{{ deal.id }}</td>
+            <td>{{ deal.companyName }}</td>
+            <td>{{ deal.createdDate }}</td>
+            <td>{{ deal.companyTel }}</td>
+            <td>{{ deal.raisedAmount }}</td>
+            <td>
+              <span
+                class="btn btn-primary btn-sm "
+                style="margin: 2px;"
+                routerLink="/dealdetails/{{ deal.id }}"
+                ><i class="fa fa-info"></i>
+              </span>
+              <span
+                class="btn btn-success btn-sm "
+                style="margin: 2px;"
+                routerLink="/editdeal/{{ deal.id }}"
+                ><i class="fa fa-edit"></i>
+              </span>
+              <span class="btn btn-danger btn-sm " (click)="deleteDeal(deal.id)"
+                ><i class="fa fa-trash"></i>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-right">
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </div>
   </div>
 </div>
