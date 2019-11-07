@@ -28,6 +28,17 @@ import { HomeComponent } from "./layouts/home/home.component";
 import { DevTblService } from "./sharedservice/table.service";
 import { NgxPaginationModule } from "ngx-pagination";
 
+// Importing social login module and facebook login provider.
+import { SocialLoginModule, AuthServiceConfig, FacebookLoginProvider } from 'angularx-social-login';
+ // Client id for the facebook oauth. This is used for validation of our application to facebook.
+// https://developers.facebook.com/
+const facebook_oauth_client_id: string = '489836511607486';
+// let config = new AuthServiceConfig([
+//   {
+//     id: FacebookLoginProvider.PROVIDER_ID,
+//     provider: new FacebookLoginProvider(facebook_oauth_client_id)
+//   }
+// ]);
 @NgModule({
   declarations: [
     AppComponent,
