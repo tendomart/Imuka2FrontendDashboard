@@ -2,6 +2,11 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { ToastrModule } from "ngx-toastr";
+import { HttpClientModule } from "@angular/common/http";
+// Forms module
+import { FormsModule } from "@angular/forms";
+import { DataTableModule } from "angular-6-datatable";
+//Search Sort Pagination in Angular 6 Modules
 
 import { SidebarModule } from "./sidebar/sidebar.module";
 import { FooterModule } from "./shared/footer/footer.module";
@@ -20,11 +25,14 @@ import { FooterComponent } from "./layouts/home/footer/footer.component";
 import { HomeComponent } from "./layouts/home/home.component";
 // import { LoginComponent } from "./layouts/signup/login/login.component";
 // import { RegisterComponent } from "./layouts/signup/register/register.component";
+import { DevTblService } from "./sharedservice/table.service";
+import { NgxPaginationModule } from "ngx-pagination";
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+
     // RegisterComponent,
     //BodyComponent,
     HeaderComponent,
@@ -35,6 +43,10 @@ import { HomeComponent } from "./layouts/home/home.component";
   ],
   imports: [
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    DataTableModule,
+    NgxPaginationModule,
     RouterModule.forRoot(AppRoutes, {
       useHash: true
     }),
@@ -44,7 +56,7 @@ import { HomeComponent } from "./layouts/home/home.component";
     FooterModule,
     FixedPluginModule
   ],
-  providers: [],
+  providers: [DevTblService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

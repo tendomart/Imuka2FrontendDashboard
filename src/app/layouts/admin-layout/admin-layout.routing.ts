@@ -22,6 +22,6 @@ export const AdminLayoutRoutes: Routes = [
   { path: "dashboard", component: DashboardComponent },
   { path: "adddeal", component: AdddealComponent },
   { path: "alldeals", component: AlldealsComponent },
-  { path: "dealdetails", component: DealdetailsComponent },
-  { path: "editdeal", component: EditdealComponent }
+  { path: "dealdetails/:id", component: DealdetailsComponent },
+  { path: "editdeal/:id", component: EditdealComponent }
 ];

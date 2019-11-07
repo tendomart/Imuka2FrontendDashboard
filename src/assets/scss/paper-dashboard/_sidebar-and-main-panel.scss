@@ -246,7 +246,7 @@
       @include sidebar-color($white-color);
       @include sidebar-text-color($default-color);
     }
-    &[data-color="black"]{
+    &[data-color="blue"]{
       @include sidebar-color($dark-color);
     }
 

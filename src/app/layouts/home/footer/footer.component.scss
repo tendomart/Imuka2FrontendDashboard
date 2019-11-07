@@ -1,3 +1,19 @@
 .bg-footer {
   background-color: #e5d7d7;
 }
+
+/* styling the partners section */
+.partners div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px !important;
+  width: 100px !important;
+  margin: auto;
+}
+.partners img {
+  object-fit: cover !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+/* end of partners section */
