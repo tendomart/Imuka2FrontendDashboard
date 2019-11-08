@@ -12,7 +12,9 @@ import { AdddealComponent } from "../../pages/adddeal/adddeal.component";
 import { AlldealsComponent } from "../../pages/alldeals/alldeals.component";
 import { DealdetailsComponent } from "../../pages/dealdetails/dealdetails.component";
 import { EditdealComponent } from "../../pages/editdeal/editdeal.component";
-
+//Add investor Route
+import { PagesInvestorComponent } from '../../pages/pages-investor/pages-investor.component';
+///home/tendo/Imuka2FrontendDashboard/src/app/pages-investor
 export const AdminLayoutRoutes: Routes = [
   {
     path: "",
@@ -23,5 +25,6 @@ export const AdminLayoutRoutes: Routes = [
   { path: "adddeal", component: AdddealComponent },
   { path: "alldeals", component: AlldealsComponent },
   { path: "dealdetails", component: DealdetailsComponent },
-  { path: "editdeal", component: EditdealComponent }
+  { path: "editdeal", component: EditdealComponent },
+  { path: "pages-investor", component: PagesInvestorComponent }
 ];

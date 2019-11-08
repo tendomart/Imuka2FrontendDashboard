@@ -17,6 +17,7 @@ import { AdddealComponent } from "../../pages/adddeal/adddeal.component";
 import { AlldealsComponent } from "../../pages/alldeals/alldeals.component";
 import { DealdetailsComponent } from "../../pages/dealdetails/dealdetails.component";
 import { EditdealComponent } from "../../pages/editdeal/editdeal.component";
+import { PagesInvestorComponent } from "../../pages/pages-investor/pages-investor.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
@@ -39,7 +40,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     AdddealComponent,
     AlldealsComponent,
     DealdetailsComponent,
-    EditdealComponent
+    EditdealComponent,
+    PagesInvestorComponent
   ]
 })
 export class AdminLayoutModule {}
