@@ -22,8 +22,13 @@
               "src/assets/scss/paper-dashboard.scss"
             ],
             "scripts": [
+<<<<<<< HEAD
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/bootstrap/dist/js/jquery-3.3.1.min.js"
+=======
+
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+>>>>>>> 2a54c543bf1ac7e66f2b8974ab5cd704c5c6bee3
             ]
           },
           "configurations": {
