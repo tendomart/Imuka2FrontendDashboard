@@ -8,9 +8,14 @@ import { DealrestApiService } from "../../sharedservice/dealrest-api.service";
   styleUrls: ["./adddeal.component.css"]
 })
 export class AdddealComponent implements OnInit {
+  // createdDate: string;
+  //dt2: number = new Date(this.createdDate).getTime();
+
   constructor(public restApi: DealrestApiService, public router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    //console.log(this.dt2);
+  }
 
   addDeal(dataDeal) {
     this.restApi.createDeal(this.dealDetails).subscribe((data: {}) => {
@@ -58,15 +63,18 @@ export class AdddealComponent implements OnInit {
     // });
     return formData;
   }
+
   @Input() dealDetails = {
     companyName: "",
     companyType: "",
     companyIndustry: "",
     companyAddress: "",
     companyTel: "",
+    companyEmail: "",
     raisedAmount: "",
     createdDate: "",
-    BriefDealDesc: "",
+
+  
     DealDetailedDesc: "",
     image: "assets/soya.jpg"
   };

@@ -1,5 +1,6 @@
 .bg-footer {
-  background-color: #e5d7d7;
+  background-color: #2d3246;
+  color: whitesmoke;
 }
 
 /* styling the partners section */
@@ -15,5 +16,17 @@
   object-fit: cover !important;
   width: 100% !important;
   box-sizing: border-box;
+}
+a {
+  color: whitesmoke;
+}
+img {
+  padding: 7px;
+}
+h1 {
+  font-style: italic;
+  padding: 0px;
+  margin-bottom: 0px;
+  font-family: "Times New Roman", Times, serif;
 }
 /* end of partners section */

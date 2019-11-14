@@ -15,11 +15,11 @@ export class AlldealsComponent implements OnInit {
   constructor(public restApi: DealrestApiService) {}
 
   ngOnInit() {
-    this.loadEmployees();
+    this.loadDeals();
   }
 
   // Get employees list
-  loadEmployees() {
+  loadDeals() {
     return this.restApi.getDeals().subscribe((data: {}) => {
       this.Deal = data;
     });
@@ -29,7 +29,7 @@ export class AlldealsComponent implements OnInit {
   deleteDeal(id) {
     if (window.confirm("Are you sure, you want to delete?")) {
       this.restApi.deleteDeal(id).subscribe(data => {
-        this.loadEmployees();
+        this.loadDeals();
       });
     }
   }

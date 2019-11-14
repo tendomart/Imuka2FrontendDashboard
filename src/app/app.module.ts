@@ -5,8 +5,7 @@ import { ToastrModule } from "ngx-toastr";
 import { HttpClientModule } from "@angular/common/http";
 // Forms module
 import { FormsModule } from "@angular/forms";
-import { DataTableModule } from "angular-6-datatable";
-//Search Sort Pagination in Angular 6 Modules
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { SidebarModule } from "./sidebar/sidebar.module";
 import { FooterModule } from "./shared/footer/footer.module";
@@ -29,10 +28,10 @@ import { DevTblService } from "./sharedservice/table.service";
 import { NgxPaginationModule } from "ngx-pagination";
 
 // Importing social login module and facebook login provider.
-import { SocialLoginModule, AuthServiceConfig, FacebookLoginProvider } from 'angularx-social-login';
- // Client id for the facebook oauth. This is used for validation of our application to facebook.
+//import { SocialLoginModule, AuthServiceConfig, FacebookLoginProvider } from 'angularx-social-login';
+// Client id for the facebook oauth. This is used for validation of our application to facebook.
 // https://developers.facebook.com/
-const facebook_oauth_client_id: string = '489836511607486';
+//const facebook_oauth_client_id: string = "489836511607486";
 // let config = new AuthServiceConfig([
 //   {
 //     id: FacebookLoginProvider.PROVIDER_ID,
@@ -56,7 +55,7 @@ const facebook_oauth_client_id: string = '489836511607486';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    DataTableModule,
+    ReactiveFormsModule,
     NgxPaginationModule,
     RouterModule.forRoot(AppRoutes, {
       useHash: true

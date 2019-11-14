@@ -1,121 +1,65 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6" style="background-color:lavender;">
-      <table class="table table-borderless">
-        <tbody>
-          <tr>
-            <td>{{ dealData.companyName }}</td>
-            <td><img src="/{{ dealData.image_url }}" alt="Company Logo" /></td>
-          </tr>
-          <tr>
-            <td>Company Industry</td>
-            <td>{{ dealData.companyIndustry }}</td>
-          </tr>
-          <tr>
-            <td>Company Address</td>
-            <td>{{ dealData.companyAddress }}</td>
-          </tr>
-          <tr>
-            <td>Company Tel:</td>
-            <td>{{ dealData.companyTel }}</td>
-          </tr>
-          <tr>
-            <td>Amount Needed</td>
-            <td>{{ dealData.raisedAmount }}</td>
-          </tr>
-          <tr>
-            <td>Start Date</td>
-            <td>{{ dealData.createdDate }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col-md-6" style="background-color:lavenderblush;">
-      <span>Brief Deal Description</span>
-      <p>{{ dealData.BriefDealDesc }}</p>
-      <span>Detailed Deal Description</span>
-      <p>{{ dealData.DealDetailedDesc }}</p>
-    </div>
+<div class="card">
+  <div class="card-header" style="background-color: #007edb;">
+    Deal Details
   </div>
-</div>
-
-<div class="container-fluid">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="#">All Bids and Offer</a>
-    </li>
-  </ol>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-header">
-          <i class="fa fa-table fa-lg"></i> (12) New Bids
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Business Name</th>
-                  <th scope="col">Minimun Offer</th>
-                  <th scope="col">Investor</th>
-                  <th scope="col">Investor Offer</th>
-                  <th scope="col">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Imuka Ventures Company LTD</td>
-                  <td>$2000</td>
-                  <td>Obwot Solomon</td>
-                  <td>$200</td>
-                  <td><a href="#">Accepted</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Imuka Ventures Company LTD</td>
-                  <td>$2000</td>
-                  <td>Obwot Solomon</td>
-                  <td>$200</td>
-                  <td><a href="#">Accepted</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Imuka Ventures Company LTD</td>
-                  <td>$2000</td>
-                  <td>Obwot Solomon</td>
-                  <td>$200</td>
-                  <td><a href="#">Accepted</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Imuka Ventures Company LTD</td>
-                  <td>$2000</td>
-                  <td>Obwot Solomon</td>
-                  <td>$200</td>
-                  <td><a href="#">Accepted</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>Imuka Ventures Company LTD</td>
-                  <td>$2000</td>
-                  <td>Obwot Solomon</td>
-                  <td>$200</td>
-                  <td><a href="#">Accepted</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td>Imuka Ventures Company LTD</td>
-                  <td>$2000</td>
-                  <td>Obwot Solomon</td>
-                  <td>$200</td>
-                  <td><a href="#">Accepted</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <img src="/{{ dealData.image_url }}" alt="Company Logo" />
+              </td>
+            </tr>
+            <tr>
+              <td><label> Name</label></td>
+              <td>
+                <span class="label2">{{ dealData.companyName }}</span>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Company Industry</label></td>
+              <td>
+                <span class="label2">{{ dealData.companyIndustry }}</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Company Address</label>
+              </td>
+              <td>
+                <span class="label2"> {{ dealData.companyAddress }}</span>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Company Tel:</label></td>
+              <td>
+                <span class="label2">{{ dealData.companyTel }}</span>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Amount Needed</label></td>
+              <td>
+                <span class="label2"> {{ dealData.raisedAmount }}</span>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Start Date</label></td>
+              <td>
+                <span class="label2"> {{ dealData.createdDate }}</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <div style="margin-top:30px;">
+          <span class="label">Brief Deal Description</span>
+          <p>{{ dealData.BriefDealDesc }}</p>
+          <br />
+          <span class="label">Detailed Deal Description</span>
+          <p>{{ dealData.DealDetailedDesc }}</p>
         </div>
       </div>
     </div>

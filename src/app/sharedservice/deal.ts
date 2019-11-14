@@ -6,9 +6,10 @@ export class Deal {
   companyIndustry: string;
   companyAddress: string;
   companyTel: string;
+  companyEmail: string;
   raisedAmount: string;
   createdDate: string;
-  BriefDealDesc: string;
+
   DealDetailedDesc: string;
-  image: string;
+  image_url: string;
 }

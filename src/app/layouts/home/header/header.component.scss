@@ -2,12 +2,24 @@
   background-color: #007edb;
 }
 .navbar-brand img {
-  height: 30px;
+  height: 70px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+a {
+  font-family: "Times New Roman", Times, serif;
 }
 .navbar-dark .navbar-nav .active .nav-link {
-  color: #fff;
+  color: rgb(228, 225, 225);
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand > img {
+  // height: 100%;
+  // padding: 15px;
+  // width: auto;
 }

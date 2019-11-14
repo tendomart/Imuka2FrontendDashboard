@@ -21,7 +21,10 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/scss/paper-dashboard.scss"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/dist/js/jquery-3.3.1.min.js"
+            ]
           },
           "configurations": {
             "production": {
